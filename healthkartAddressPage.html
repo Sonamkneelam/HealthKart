@@ -1,488 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        * {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        }
+    <link rel="stylesheet" href="./Styles/healthkartAddressPage.css" />
+  </head>
 
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            position: relative;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(62, 61, 61, 0.56);
-            backdrop-filter: blur(0.09px);
-            z-index: 5;
-        }
-
-        .header-container {
-            position: fixed;
-            width: 100%;
-            height: 65px;
-            box-shadow: 0 3px 6px rgb(0 0 0 / 12%);
-            display: flex;
-            align-items: center;
-            background-color: white;
-        }
-
-        .cont1 {
-            display: flex;
-            width: 80%;
-            justify-content: flex-start;
-            align-items: center;
-            margin-left: 10%;
-            background-color: white;
-        }
-
-        .cont1>div:nth-child(2)>div:nth-child(2),
-        .cont1>div:nth-child(2)>div:nth-child(4) {
-            background-color: black;
-            width: 120px;
-            height: 0.5px;
-            margin-top: 5px;
-        }
-
-        .cont1>div:nth-child(2)>div {
-            display: flex;
-            align-items: center;
-        }
-
-        .cont1>div:nth-child(2) {
-            padding: 0 10px;
-            display: flex;
-            justify-content: space-around;
-            color: rgb(147, 147, 147);
-            margin-left: 10%;
-            font-size: 80%;
-        }
-
-        .cont1>div:nth-child(2)>div:nth-child(2n-1) {
-            padding: 0 10px;
-        }
-
-        .logo {
-            font-size: 25.3px;
-            color: rgb(0, 191, 191);
-            font-weight: 500;
-            cursor: pointer;
-            letter-spacing: 3px;
-            height: 49px;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo>span {
-            color: white;
-            background-color: rgb(0, 191, 191);
-            height: 49px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 3px;
-        }
-
-        .address-modal {
-            height: auto;
-            max-height: 90%;
-            overflow: auto;
-            max-width: 95%;
-            transform: translate(-50%, -50%) !important;
-            display: block;
-            z-index: 20;
-            box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 29.2%;
-            /* height: 71.23vh; */
-            background: #fff;
-            border-radius: 4px;
-            overflow: hidden;
-            min-width: 350px;
-        }
-
-        .address-head {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            margin: 0;
-            border-bottom: 1px solid #d6d6d6;
-            padding: 14px 26px 20px 23px;
-        }
-
-        .address-head>h2 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 24px;
-            text-transform: capitalize;
-            color: #000;
-        }
-
-        .form-container {
-            float: left;
-            width: 100%;
-            padding: 1.8% 0;
-            height: 98%;
-        }
-
-        .address-form {
-            font-size: 14px;
-            color: #212121;
-            outline: none;
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-        }
-
-        .fieldset-container {
-            padding: 2.7% 6.7%;
-            height: 100%;
-            width: 86.6%;
-        }
-
-        .address-form-row {
-            width: 100%;
-            margin-bottom: 20px;
-            float: left;
-        }
-
-        .address-full-row {
-            width: 100%;
-            float: left;
-        }
-
-        .address-half-row {
-            width: 45%;
-            float: left;
-            padding-right: 5%;
-        }
-
-        .address-fieldset {
-            padding: 0;
-            border: 0;
-            width: 100%;
-            position: relative;
-        }
-
-        .address-input-healthkart {
-            display: block;
-            width: 100%;
-
-            outline: none !important;
-            border: none;
-            border-bottom: 1px solid #e6e7e7;
-            box-shadow: none !important;
-            outline: none;
-            background: #fff;
-            color: #000;
-            font-size: 13px;
-            line-height: 19px;
-            padding: 20px 0 4px;
-        }
-
-        .address-form-row input:focus+.address-label {
-            border-color: #e6e7e7;
-            border-width: medium medium 2px;
-            top: -4px;
-            left: 2px;
-        }
-
-        .address-form-row input:valid~label {
-            top: -4px;
-            left: 2px;
-            border-color: #e6e7e7;
-        }
-
-        .address-label {
-            color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            border-width: medium medium 1px;
-            pointer-events: none;
-            top: 18px;
-            left: -2px;
-            transition: all 0.2s ease;
-        }
-
-        .address-mandatory-details {
-            width: 8px;
-            height: 8px;
-            padding: 0 13px 0 0;
-            color: red;
-            font-weight: 700;
-        }
-
-        .address-button {
-            cursor: pointer;
-            width: 100%;
-            border-radius: 8px;
-            padding: 0 8px;
-            font-weight: 500;
-            background: #239796;
-            border: 1px solid #239796;
-            font-size: 17px;
-            color: #fff;
-            line-height: 50px;
-        }
-
-        @media (max-width:650px) {
-            .address-modal {
-                height: auto;
-                max-height: 90%;
-                overflow: auto;
-                width: 55%;
-            }
-        }
-
-        @media (min-width:350px) and (max-width:649px) {
-            .address-modal {
-                height: auto;
-                max-height: 90%;
-                overflow: auto;
-                width: 95%;
-            }
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <div class="overlay"></div>
     <div class="header-container">
-        <div class="cont1">
-            <div>
-                <div class="logo">HEALT<span>HK</span>ART</div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg" alt="" />CART
-                </div>
-                <div></div>
-                <div>
-                    <img src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-blue.svg" alt="" />ADDRESS
-                </div>
-                <div></div>
-                <div>
-                    <img src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg" alt="" />PAYMENT
-                </div>
-            </div>
+      <div class="cont1">
+        <div>
+          <div class="logo">HEALT<span>HK</span>ART</div>
         </div>
+        <div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg"
+              alt=""
+            />CART
+          </div>
+          <div></div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-blue.svg"
+              alt=""
+            />ADDRESS
+          </div>
+          <div></div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg"
+              alt=""
+            />PAYMENT
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="address-modal">
-        <div class="address-head">
-            <h2>Add new address</h2>
-            <img src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg" alt="close" />
-        </div>
-        <div class="form-container">
-            <form class="address-form">
-                <div class="fieldset-container">
-                    <div class="address-form-row">
-                        <div class="address-full-row">
-                            <fieldset class="address-fieldset">
-                                <input type="text" name="address-name" id="address_name" required
-                                    class="address-input-healthkart" autocomplete="off" />
-                                <label class="address-label"><span class="content-text">Name</span>
-                                    <span class="address-mandatory-details">*</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="address-form-row">
-                        <div class="address-half-row">
-                            <fieldset class="address-fieldset">
-                                <input type="number" name="mobile-no." id="mobile_num" class="address-input-healthkart"
-                                    autocomplete="off" required />
-                                <label class="address-label"><span class="content-text">Mobile No.</span>
-                                    <span class="address-mandatory-details">*</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                        <div class="address-half-row">
-                            <fieldset class="address-fieldset">
-                                <input type="number" name="alternate-no." id="alternate_num"
-                                    class="address-input-healthkart" required autocomplete="off" />
-                                <label class="address-label"><span class="content-text">Alternate No.</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="address-form-row">
-                        <div class="address-full-row">
-                            <fieldset class="address-fieldset">
-                                <input type="text" name="address" id="delivery_address" class="address-input-healthkart"
-                                    autocomplete="off" required />
-                                <label class="address-label"><span class="content-text">Address</span>
-                                    <span class="address-mandatory-details">*</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="address-form-row">
-                        <div class="address-half-row">
-                            <fieldset class="address-fieldset">
-                                <input type="text" name="landmark" id="landmark" class="address-input-healthkart"
-                                    autocomplete="off" required />
-                                <label class="address-label"><span class="content-text">Landmark</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                        <div class="address-half-row">
-                            <fieldset class="address-fieldset">
-                                <input type="text" name="pincode" id="pincode" class="address-input-healthkart"
-                                    autocomplete="off" required />
-                                <label class="address-label"><span class="content-text">Pincode</span><span
-                                        class="address-mandatory-details">*</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="address-form-row">
-                        <div class="address-half-row">
-                            <fieldset class="address-fieldset">
-                                <input type="text" name="state" id="state" class="address-input-healthkart"
-                                    autocomplete="off" required />
-                                <label class="address-label"><span class="content-text">State</span>
-                                    <span class="address-mandatory-details">*</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                        <div class="address-half-row">
-                            <fieldset class="address-fieldset">
-                                <input type="text" name="city" id="city" class="address-input-healthkart"
-                                    autocomplete="off" required />
-                                <label class="address-label"><span class="content-text">City</span>
-                                    <span class="address-mandatory-details">*</span>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
+      <div class="address-head">
+        <h2>Add new address</h2>
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg"
+          alt="close"
+        />
+      </div>
+      <div class="form-container">
+        <form class="address-form">
+          <div class="fieldset-container">
+            <div class="address-form-row">
+              <div class="address-full-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="address-name"
+                    id="address_name"
+                    required
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Name</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="number"
+                    name="mobile-no."
+                    id="mobile_num"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Mobile No.</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="number"
+                    name="alternate-no."
+                    id="alternate_num"
+                    class="address-input-healthkart"
+                    required
+                    autocomplete="off"
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Alternate No.</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-full-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="address"
+                    id="delivery_address"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Address</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="landmark"
+                    id="landmark"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Landmark</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="pincode"
+                    id="pincode"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Pincode</span
+                    ><span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">State</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">City</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
 
-                    <button class="address-button">Save & Deliver</button>
-                </div>
-            </form>
-        </div>
+            <button class="address-button">Save & Deliver</button>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
 
-<script>
-    let address_form = document.querySelector(".address-form");
-
-    let address_button = document.querySelector(".address-button");
-    address_button.addEventListener("click", healthkart_delivery_address);
-
-    function healthkart_delivery_address(e) {
-        e.preventDefault();
-        let healthkart_name = address_form.address_name.value;
-        console.log("healthkart_name:", healthkart_name);
-
-        let healthkart_mobile_num = address_form.mobile_num.value;
-        console.log("healthkart_mobile_num:", healthkart_mobile_num);
-
-        let healthkart_alternate_num = address_form.alternate_num.value;
-        console.log("healthkart_alternate_num:", healthkart_alternate_num);
-
-        let healthkart_delivery_address = address_form.delivery_address.value;
-        console.log("healthkart_delivery_address:", healthkart_delivery_address);
-
-        let healthkart_landmark = address_form.landmark.value;
-        console.log("healthkart_landmark:", healthkart_landmark);
-
-        let healthkart_pincode = address_form.pincode.value;
-        console.log("healthkart_pincode:", healthkart_pincode);
-
-        let healthkart_state = address_form.state.value;
-        console.log("healthkart_state:", healthkart_state);
-
-        let healthkart_city = address_form.city.value;
-        console.log("healthkart_city:", healthkart_city);
-
-        if (
-            healthkart_name == "" ||
-            healthkart_name == null ||
-            healthkart_mobile_num == "" ||
-            healthkart_mobile_num == null ||
-            healthkart_mobile_num.length != 10 ||
-            healthkart_delivery_address == "" ||
-            healthkart_delivery_address == null ||
-            healthkart_pincode == "" ||
-            healthkart_pincode == null ||
-            healthkart_state == "" ||
-            healthkart_state == null ||
-            healthkart_pincode.length != 6 ||
-            healthkart_city == "" ||
-            healthkart_city == null
-        ) {
-            alert("All Details are Required");
-        } else {
-            healthkart_add_delivery_address(
-                healthkart_name,
-                healthkart_mobile_num,
-                healthkart_alternate_num,
-                healthkart_delivery_address,
-                healthkart_landmark,
-                healthkart_pincode,
-                healthkart_state,
-                healthkart_city
-            );
-        }
-    }
-
-    function healthkart_add_delivery_address(
-        healthkart_name,
-        healthkart_mobile_num,
-        healthkart_alternate_num,
-        healthkart_delivery_address,
-        healthkart_landmark,
-        healthkart_pincode,
-        healthkart_state,
-        healthkart_city
-    ) {
-        let healthkart_address_details = {
-            healthkart_name,
-            healthkart_mobile_num,
-            healthkart_alternate_num,
-            healthkart_delivery_address,
-            healthkart_landmark,
-            healthkart_pincode,
-            healthkart_state,
-            healthkart_city,
-        };
-
-        let healthkart_address_data = localStorage.getItem(
-            "healthkart_address_data"
-        );
-
-        if (healthkart_address_data == null) {
-            healthkart_address_data = [];
-        } else {
-            healthkart_address_data = JSON.parse(
-                localStorage.getItem("healthkart_address_data")
-            );
-        }
-
-        healthkart_address_data.push(healthkart_address_details);
-        localStorage.setItem(
-            "healthkart_address_data",
-            JSON.stringify(healthkart_address_data)
-        );
-        alert("Added");
-        window.location.href = "./payment.html";
-    }
-</script>
+<script src="./Scripts/address.js"></script>

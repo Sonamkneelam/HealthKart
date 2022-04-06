@@ -1,17 +1,2194 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthKart Body</title>
+ <link rel="stylesheet" href="./Styles/index.css">
 </head>
+
 <body>
-    <a href="./body.html" id="link">Redirecting</a>
-    Redirecting to main page
+  <div class="cont1 navbar">
+    <div style="
+      font-size: 25.3px;
+      color: rgb(0, 191, 191);
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 3px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+    " onclick="(location.href='./body.html')">
+      HEALT<span style="
+        color: white;
+        background-color: rgb(0, 191, 191);
+        height: 49px;
+        display: flex;
+        align-items: center;
+      ">HK</span>ART
+    </div>
+    <div class="inp-search">
+
+
+      <input type="text" placeholder="Search for products & brands" class="search-input" />
+
+      <img class="search-icon" src="https://img10.hkrtcdn.com/react/static/media/common/header/search-icon-grey-2.svg"
+        alt="5" />
+    </div>
+    <div>Returns & Orders</div>
+    <div><button class="login">Login</button></div>
+    <div><button class="blue signup">Signup</button></div>
+    <div class="cart" id="c55" style="width: 70px;">
+      <img style="height: 90%; float: left;"
+        src="https://img10.hkrtcdn.com/react/static/media/common/misc/shopping-cart.svg" />
+      <div id="number_cartip">0</div>
+      <div id="cart-list">
+        <div id="location-to-cart">Proceed to Cart</div>
+      </div>
+    </div>
+  </div>
+  <div class="cont2 navbar">
+    <div class="c2box1">
+      <div class="category" id="category">
+        <div>Category</div>
+        <div id="category-list">
+          <div id="category-list-child1">
+            <div id="sports-nutrition">
+              <p>Sports Nutrition</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+            <div id="vitamins">
+              <p>Vitamins and supplements</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+            <div id="ayurvedha">
+              <p>Ayurvedha & herbs</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+            <div id="health">
+              <p>Health food and drinks</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+            <div id="fitness">
+              <p>Fitness</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+            <div id="wellness">
+              <p>Wellness</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+            <div id="service">
+              <p>Service Program</p>
+              <i class="fas fa-greater-than" style="margin-right: 7px"></i>
+            </div>
+          </div>
+          <div id="category-list-child2">
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="Brand" id="brand">
+        <div>Brand</div>
+        <div id="brand-list">
+          <div id="brand-list-child1">
+            <p style="background-color: white">All brands</p>
+            <i class="fas fa-greater-than" style="margin-left: 11px"></i>
+          </div>
+          <div id="brand-list-child2">
+            <div>
+              <p>Sports Nutrition</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum Nutrition</p>
+            </div>
+            <div>
+              <p>Vitamins and supplements</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum Nutrition</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+            </div>
+            <div>
+              <p>Healthh food & Drinks</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum Nutri</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+            </div>
+            <div>
+              <p>Fitness</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum Nn</p>
+              <p>muscle</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum N</p>
+              <p>muscle</p>
+            </div>
+            <div>
+              <p>Wellness</p>
+              <p>muscle Blaze</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimumition</p>
+              <p>muscle B</p>
+              <p>JustGreen</p>
+              <p>Bgreen</p>
+              <p>Optimum tion</p>
+              <p>muscle Bl</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Gender" id="gender">
+        <div>Gender</div>
+        <div id="gender-list">
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/menu-men-icon.svg" alt="" />
+            <p>Men</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/menu-women-icon.svg" alt="" />
+            <p>Women</p>
+          </div>
+        </div>
+      </div>
+      <div class="Goal" id="goal">
+        <div>Goal</div>
+        <div id="goal-list">
+          <div>
+            <img src="https://img8.hkrtcdn.com/13667/bnr_1366617_o.png" alt="" />
+            <p>Immunity and well being</p>
+          </div>
+          <div>
+            <img src="https://img4.hkrtcdn.com/13667/smn_image_1366633_o.png" alt="" />
+            <p>Lean muscle mass</p>
+          </div>
+          <div>
+            <img src="https://img2.hkrtcdn.com/13667/smn_image_1366641_o.png" alt="" />
+            <p>Weight loss</p>
+          </div>
+          <div>
+            <img src="https://img8.hkrtcdn.com/13667/smn_image_1366637_o.png" alt="" />
+            <p>Stress and relaxation</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/13670/smn_image_1366929_o.png" alt="" />
+            <p>Bulk gain</p>
+          </div>
+        </div>
+      </div>
+      <div class="Offers" id="offers">
+        <div><i class="fas fa-tshirt" style="color: red"></i>Offers</div>
+        <div id="offers-list">
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/menu-flash-sale-icon.svg" alt="" />
+            <p>Flash sale</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/menu-super-saving-icon.svg" alt="" />
+            <p>Super Savings sale</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/menu-999-store-icon.svg" alt="" />
+            <p>999 store</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/menu-999-store-icon.svg" alt="" />
+            <p>599 store</p>
+          </div>
+        </div>
+      </div>
+      <div class="BestSellers" id="bestsellers">
+        <div>BestSellers</div>
+        <div id="bestsellers-list">
+          <div class="bestsellers-1">
+            <div onmouseover="bestsellerschange1()">
+              Sports Nutrition<i class="fas fa-greater-than" id="best-sellers-button1" style="margin-left: 5px"></i>
+            </div>
+            <div onmouseover="bestsellerschange2()">
+              Health Nutrition<i class="fas fa-greater-than" id="best-sellers-button2" style="margin-left: 5px"></i>
+            </div>
+          </div>
+          <div id="bestsellers-2"></div>
+        </div>
+      </div>
+      <div class="Consult" id="consult">
+        <div>Consult</div>
+        <div id="consult-list">
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/consult-health-profile-icon.svg"
+              alt="" />
+            <p>Health Profile</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/track-diet-plan-icon.svg" alt="" />
+            <p>Track diet plan</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/what-we-offer-icon.svg" alt="" />
+            <p>What do we offer</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/book-consultation-icon.svg" alt="" />
+            <p>Book a consultation</p>
+          </div>
+          <div>
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/workout-from-home-icon.svg" alt="" />
+            <p>Workout at Home</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="GiftCard">GiftCard</div>
+      <div class="Blog">Blog Videos & More</div>
+    </div>
+    <div class="c2box2">
+      <div class="store"><i class="fas fa-store"></i></div>
+      <div class="visit">Vist HK stores</div>
+    </div>
+  </div>
+
+  <div class="carousel">
+    <button class="carousel_button carousel_button--left is-hidden">
+      <img src="https://img9.hkrtcdn.com/react/static/media/common/misc/home-slider-left-v2.svg" alt="1" />
+    </button>
+    <div class="carousel_track-container">
+      <ul class="carousel_track">
+        <li class="carousel_slide current-slide">
+          <img class="carousel_image" src="https://img6.hkrtcdn.com/14799/bnr_1479875_o.jpg" alt="1" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img4.hkrtcdn.com/14800/bnr_1479923_o.jpg" alt="2" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img2.hkrtcdn.com/14797/bnr_1479641_o.jpg" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img2.hkrtcdn.com/14798/bnr_1479701_o.png" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img10.hkrtcdn.com/14638/bnr_1463729_o.jpg" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img2.hkrtcdn.com/14797/bnr_1479691_o.jpg" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img10.hkrtcdn.com/14674/bnr_1467349_o.png" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img10.hkrtcdn.com/14086/bnr_1408549_o.jpg" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img2.hkrtcdn.com/14086/bnr_1408551_o.jpg" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img4.hkrtcdn.com/14086/bnr_1408553_o.jpg" alt="3" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="https://img4.hkrtcdn.com/14675/bnr_1467433_o.jpg" alt="3" />
+        </li>
+      </ul>
+    </div>
+    <button class="carousel_button carousel_button--right">
+      <img src="https://img9.hkrtcdn.com/react/static/media/common/misc/home-slider-right-v2.svg" alt="2" />
+    </button>
+
+    <div class="carousel_nav">
+      <button class="carousel_indicator 1 current-slide"></button>
+      <button class="carousel_indicator 2"></button>
+      <button class="carousel_indicator 3"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+      <button class="carousel_indicator"></button>
+    </div>
+  </div>
+
+  <div class="personalize-container">
+    <div class="personalize-widget">
+      <div class="personalize-flex">
+        <div class="personalize-title">Flash Sale</div>
+        <div class="personalize-view-all">
+          <div class="personalize-view-all-tracker">View All</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-container">
+    </div>
+
+  </div>
+  <div class="personalize-container">
+    <div class="personalize-widget">
+      <div class="personalize-flex">
+        <div class="personalize-title">Trending Now</div>
+        <div class="personalize-view-all">
+          <div class="personalize-view-all-tracker">View All</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-container">
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 60 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.38 gm</p>
+                    <p class="dis-main">Glutamic</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img class="hover-hidden-image"
+          src="https://img10.hkrtcdn.com/12134/prd_1213319-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg"
+          alt="1" />
+        <span class="variant-offer-home">17% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Biozyme Whey Protein, 4.4 lb, Rich Milk Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,589)</div>
+            <span class="sale-price">&#8377 4399</span>
+            <span class="old-price">&#8377 5349</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 4267</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk and Water
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 60 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.38 gm</p>
+                    <p class="dis-main">Glutamic acid</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">117</p>
+                    <p class="dis-main">kcal</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img8.hkrtcdn.com/12057/prd_1205637-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg"
+          alt="1" />
+        <span class="variant-offer-home">15% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 5 lb, Double Rich Chocolate
+          </div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.5 (2,189)</div>
+            <span class="sale-price">&#8377 6544</span>
+            <span class="old-price">&#8377 7699</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains WPC
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk or Water
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 121 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.5 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.3 gm</p>
+                    <p class="dis-main">Glutamic acid</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img6.hkrtcdn.com/12134/prd_1213315-MuscleBlaze-Whey-Performance-70-Protein-8.8-lb-Chocolate_c_s.jpg"
+          alt="1" />
+        <span class="variant-offer-home">19% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Whey Protein, 8.8 lb, Rich Milk Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,589)</div>
+            <span class="sale-price">&#8377 6488</span>
+            <span class="old-price">&#8377 8999</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 6288</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Strength,Energy and Immunity
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg"
+          alt="1" />
+        <span class="variant-offer-home">40% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Biozyme Whey Protein, 4.4 lb, Rich Milk Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,589)</div>
+            <span class="sale-price">&#8377 399</span>
+            <span class="old-price">&#8377 658</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 4267</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mid-container1">
+    <p>Hi, What are you looking for?</p>
+    <div class="mid-container1-div">
+      <img src="https://img2.hkrtcdn.com/13437/normal_1343641_o.png" alt="1">
+      <img src="https://img8.hkrtcdn.com/13471/normal_1347067_o.png" alt="2">
+      <img src="https://img8.hkrtcdn.com/13530/bnr_1352997_o.png" alt="3">
+      <img src="https://img2.hkrtcdn.com/13471/normal_1347071_o.png" alt="4">
+      <img src="https://img4.hkrtcdn.com/13471/normal_1347073_o.png" alt="5">
+      <img src="https://img6.hkrtcdn.com/13471/normal_1347075_o.png" alt="6">
+      <img src="https://img4.hkrtcdn.com/13465/normal_1346413_o.png" alt="7">
+      <img src="https://img10.hkrtcdn.com/13471/normal_1347079_o.png" alt="8">
+    </div>
+  </div>
+
+  <div class="mid-container2">
+    <h2>Popular in Sports Nutrition</h2>
+    <div>
+      <div class="element-item">
+        <div>
+          <img src="https://img2.hkrtcdn.com/6544/bnr_654341_o.png" alt="1" />
+          <p>Whey Protiens</p>
+        </div>
+      </div>
+
+      <div class="element-item">
+        <div>
+          <img src="https://img6.hkrtcdn.com/6544/bnr_654345_o.png" alt="2">
+          <p>Whey Protein Isolate</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img4.hkrtcdn.com/6544/bnr_654343_o.png" alt="3">
+          <p>Mass Gainers</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img8.hkrtcdn.com/6544/bnr_654347_o.png" alt="4">
+          <p>Amino Acids / BCAAs</p>
+        </div>
+      </div>
+      <div class="element-item" id="lastElement">
+        <div>
+          <img src="https://img10.hkrtcdn.com/6544/bnr_654349_o.png" alt="5">
+          <p>Pre-Workout</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mid-container2">
+    <h2>Popular in Weight Loss</h2>
+    <div>
+      <div class="element-item">
+        <div>
+          <img src="https://img6.hkrtcdn.com/6542/bnr_654165_o.png" alt="1" />
+          <p>Meal Replacement</p>
+        </div>
+      </div>
+
+      <div class="element-item">
+        <div>
+          <img src="https://img6.hkrtcdn.com/9523/bnr_952235_o.png" alt="2">
+          <p>Energy Drinks</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img8.hkrtcdn.com/4045/bnr_404407_o.png" alt="3">
+          <p>Green Coffee bean Extract</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img4.hkrtcdn.com/6543/bnr_654213_o.png" alt="4">
+          <p>Garcinia Cambogia</p>
+        </div>
+      </div>
+      <div class="element-item" id="lastElement">
+        <div>
+          <img src="https://img10.hkrtcdn.com/6543/bnr_654229_o.png" alt="5">
+          <p>Fat-Loss Supplements</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="personalize-container">
+    <div class="personalize-widget">
+      <div class="personalize-flex">
+        <div class="personalize-title">Trending In Whey Protein</div>
+        <div class="personalize-view-all">
+          <div class="personalize-view-all-tracker">View All</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-container">
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains WPC
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk or Water
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 121 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.5 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.3 gm</p>
+                    <p class="dis-main">Glutamic acid</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img class="hover-hidden-image"
+          src="https://img10.hkrtcdn.com/12133/prd_1213269-MuscleBlaze-Whey-Protein-8.8-lb-Rich-Milk-Chocolate_c_s.jpg"
+          alt="1" />
+        <span class="variant-offer-home">28% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Whey Protein, 8.8 lb, Rich Milk Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.7 (155)</div>
+            <span class="sale-price">&#8377 6448</span>
+            <span class="old-price">&#8377 8999</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 6255</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 60 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.38 gm</p>
+                    <p class="dis-main">Glutamic</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img8.hkrtcdn.com/12133/prd_1213267-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Cafe-Mocha_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">17% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Biozyme Whey Protein, 4.4 lb, Cafe Mocha</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,071)</div>
+            <span class="sale-price">&#8377 4399</span>
+            <span class="old-price">&#8377 5349</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 4267</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains WPC
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk or Water
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 74 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">24 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4 gm</p>
+                    <p class="dis-main">Glutamicacid</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">117</p>
+                    <p class="dis-main">kcal</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img8.hkrtcdn.com/12057/prd_1205637-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">19% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 5 lb, Double Rich Chocolate
+          </div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,589)</div>
+            <span class="sale-price">&#8377 6544</span>
+            <span class="old-price">&#8377 7699</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 60 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.38 gm</p>
+                    <p class="dis-main">Glutamic</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img4.hkrtcdn.com/12135/prd_1213413-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Ice-Cream-Chocolate_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">17% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Biozyme Whey Protein, 4.4 lb, Ice Cream Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,589)</div>
+            <span class="sale-price">&#8377 4399</span>
+            <span class="old-price">&#8377 5349</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 4267</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mid-container2">
+    <h2>Popular in Health Foods & Drinks</h2>
+    <div>
+      <div class="element-item">
+        <div>
+          <img src="https://img2.hkrtcdn.com/6543/bnr_654291_o.png" alt="1" />
+          <p>Apple Cider Vinegar</p>
+        </div>
+      </div>
+
+      <div class="element-item">
+        <div>
+          <img src="https://img4.hkrtcdn.com/6543/bnr_654293_o.png" alt="2">
+          <p>Peanut Butter</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img2.hkrtcdn.com/6544/bnr_654301_o.png" alt="3">
+          <p>Protein Bars</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img10.hkrtcdn.com/6543/bnr_654299_o.png" alt="4">
+          <p>Cereals</p>
+        </div>
+      </div>
+      <div class="element-item" id="lastElement">
+        <div>
+          <img src="https://img6.hkrtcdn.com/6543/bnr_654295_o.png" alt="5">
+          <p>Nutrition for Children</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="personalize-container">
+    <div class="personalize-widget">
+      <div class="personalize-flex">
+        <div class="personalize-title">Trending In Mass Gainer
+        </div>
+        <div class="personalize-view-all">
+          <div class="personalize-view-all-tracker">View All</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-container">
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in mass gaining
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk or Water
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 121 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">358</p>
+                    <p class="dis-main">Kcal</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">30 gm</p>
+                    <p class="dis-main">Protein</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">50 gm</p>
+                    <p class="dis-main">Carbs</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">6.5 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img class="hover-hidden-image" src="https://img10.hkrtcdn.com/9679/prd_967839_o.jpg" alt="1" />
+        <span class="variant-offer-home">16% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Gold Gainer XXL, 6 lb, Chocolate Bliss</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.7 (155)</div>
+            <span class="sale-price">&#8377 3471</span>
+            <span class="old-price">&#8377 4149</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 3365</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains MG
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 121 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">1258</p>
+                    <p class="dis-main">Kcal</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">52 gm</p>
+                    <p class="dis-main">Protein</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">250 gm</p>
+                    <p class="dis-main">Carbs</p>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img8.hkrtcdn.com/6173/prd_617297-Labrada-Muscle-Mass-Gainer-6-lb-Chocolate_o.jpg" alt="1" />
+        <span class="variant-offer-home">5% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">Labrada Muscle Mass Gainer, 6.61 lb, Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (271)</div>
+            <span class="sale-price">&#8377 3399</span>
+            <span class="old-price">&#8377 3599</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains MG
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">100gm for 30 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">374</p>
+                    <p class="dis-main">kcal</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">24 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">70 gm</p>
+                    <p class="dis-main">Carbs</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">2gm</p>
+                    <p class="dis-main">Dietary Fibre</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img10.hkrtcdn.com/12080/prd_1207919-MuscleBlaze-Mass-Gainer-XXL-6.6-lb-Chocolate_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">19% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Mass Gainer XXL, 6.6 lb, Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.4 (2,589)</div>
+            <span class="sale-price">&#8377 2686</span>
+            <span class="old-price">&#8377 3499</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 2605</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains MG
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Milk
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">233 grams of 14 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">858</p>
+                    <p class="dis-main">Kcal</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">62 gm</p>
+                    <p class="dis-main">Protein</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">130 gm</p>
+                    <p class="dis-main">Carbs</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image" src="https://img2.hkrtcdn.com/11832/prd_1183161_o.jpg" alt="1" />
+        <span class="variant-offer-home">20% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleTech Mass Tech Performance Series, 7 lb, Milk Chocolate</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (89)</div>
+            <span class="sale-price">&#8377 4765</span>
+            <span class="old-price">&#8377 5999</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mid-container2">
+    <h2>Popular In Fitness</h2>
+    <div>
+      <div class="element-item">
+        <div>
+          <img src="https://img2.hkrtcdn.com/3802/bnr_380131_o.png" alt="1" />
+          <p>Gym Essentails</p>
+        </div>
+      </div>
+
+      <div class="element-item">
+        <div>
+          <img src="https://img2.hkrtcdn.com/3801/bnr_380091_o.png" alt="2">
+          <p>Fitness Equipment</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img6.hkrtcdn.com/3802/bnr_380125_o.png" alt="3">
+          <p>Gym Accessories</p>
+        </div>
+      </div>
+      <div class="element-item">
+        <div>
+          <img src="https://img10.hkrtcdn.com/3802/bnr_380129_o.png" alt="4">
+          <p>Gym Supports</p>
+        </div>
+      </div>
+      <div class="element-item" id="lastElement">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="personalize-container">
+    <div class="personalize-widget">
+      <div class="personalize-flex">
+        <div class="personalize-title">Trending In Premium Supplements
+        </div>
+        <div class="personalize-view-all">
+          <div class="personalize-view-all-tracker">View All</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-container">
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Contains Omega3
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Heart,Joint,Eye & Brain
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <img class="hover-hidden-image"
+          src="https://img8.hkrtcdn.com/11795/prd_1179417-TrueBasics-Ultra-Omega3-Fatty-Acids-Triple-Strength-with-1250mg-Fish-oil-EPA-460-mg-DHA-380-mg-90-capsules_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">10% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">TrueBasics Ultra Omega-3 (EPA 525mg & DHA 400mg), 90 capsules</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.7 (155)</div>
+            <span class="sale-price">&#8377 1448</span>
+            <span class="old-price">&#8377 1699</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 1255</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Energy,Immunity,Joint Support & Stamina
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img4.hkrtcdn.com/6865/prd_686463-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">10% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">TrueBasics Multivit Sport One Daily Multivitamin, 90 tablet(s), Unflavoured</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.8 (171)</div>
+            <span class="sale-price">&#8377 1599</span>
+            <span class="old-price">&#8377 1699</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 1267</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Bone and Joint Support
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img2.hkrtcdn.com/7691/prd_769051-TrueBasics-Advanced-Calcium-90-tablets-Unflavoured_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">10% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">TrueBasics Advance Calcium Vitamin D3 & K2MK7, 90 tablet(s), Unflavoured
+          </div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.8 (89)</div>
+            <span class="sale-price">&#8377 844</span>
+            <span class="old-price">&#8377 999</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 872</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Flexibitlity,
+                  Lubrication , Strength
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img2.hkrtcdn.com/7694/prd_769311-TrueBasics-Joint-Gold-with-1500mg-of-Glucosamine-1200mg-of-Chondroitin-90-tablets_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">10% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">TrueBasics Joint Ease with 1500mg of Glucosamine & 1200mg of Chondroitin, 90
+            tablet(s)</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (29)</div>
+            <span class="sale-price">&#8377 1529</span>
+            <span class="old-price">&#8377 1699</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 1467</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="personalize-container">
+    <div class="personalize-widget">
+      <div class="personalize-flex">
+        <div class="personalize-title">Just Launched Products
+        </div>
+        <div class="personalize-view-all">
+          <div class="personalize-view-all-tracker">View All</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-container">
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 121 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.5 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.3 gm</p>
+                    <p class="dis-main">Glutamic acid</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img class="hover-hidden-image"
+          src="https://img2.hkrtcdn.com/14637/prd_1463611-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">20% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Biozyme Performance Whey, 4.4 lb, Chocolate Hazelnut</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.7 (185)</div>
+            <span class="sale-price">&#8377 3499</span>
+            <span class="old-price">&#8377 4399</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 3355</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Recovery
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Water
+                </p>
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">30 gm of 33 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">25 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">112</p>
+                    <p class="dis-main">Kcal</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75 gm</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image" src="https://img4.hkrtcdn.com/13528/prd_1352733_o.jpg" alt="1" />
+        <span class="variant-offer-home">29% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">MuscleBlaze Raw Whey Isolate, Unflavoured, 2.2 lb</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (271)</div>
+            <span class="sale-price">&#8377 1599</span>
+            <span class="old-price">&#8377 2149</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 1500</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Muscle Building
+                </p>
+
+              </div>
+            </div>
+            <div class="content-div2">
+              <span class="supplement-info">33 grams of 74 servings contains</span>
+              <div class="supplement-info-text">
+                <ul class="supplement-info-list">
+                  <li class="supplement-info-items">
+                    <p class="val">24 gm</p>
+                    <p class="dis-main">Protien</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">5.51 gm</p>
+                    <p class="dis-main">BCAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">11.75</p>
+                    <p class="dis-main">EAA</p>
+                  </li>
+                  <li class="supplement-info-items">
+                    <p class="val">4.38 gm</p>
+                    <p class="dis-main">Glutamicacid</p>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img4.hkrtcdn.com/12019/prd_1201863-MuscleBlaze-Biozyme-Whey-Protein-8.8-lb-Rich-Milk-Chocolate_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">18% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 5 lb, Double Rich Chocolate
+          </div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (1,089)</div>
+            <span class="sale-price">&#8377 7544</span>
+            <span class="old-price">&#8377 9399</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 7367</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+      <div class="item-variant">
+        <div class="hover-div">
+          <div class="content-div">
+            <div class="content-div1">
+              <div class="benefits">Benefits</div>
+              <div class="hover-text">
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Helps in Healthy Heart
+                </p>
+                <p>
+                  <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+                  Consume with Water
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img class="hover-hidden-image"
+          src="https://img2.hkrtcdn.com/14798/prd_1479761-HealthKart-Fish-Oil-1000mg-with-180mg-EPA-and-120mg-DHA-90-capsules_o.jpg"
+          alt="1" />
+        <span class="variant-offer-home">50% Off</span>
+
+        <div class="variant-info">
+          <div class="variant-name">HealthKart Fish Oil 1000mg with 180mg EPA and 120mg DHA, 90 capsules</div>
+          <div class="variant-summary">
+            <span class="variant-rating">
+              <img src="http://anastasiofence.com/wp-content/uploads/2017/09/5-Star-Rating.png" alt="stars">
+            </span>
+            <div class="review-count">4.6 (989)</div>
+            <span class="sale-price">&#8377 499</span>
+            <span class="old-price">&#8377 1000</span>
+            <div class="homePage-btn">
+              <button class="add-to-cart" type="button">
+                <img src="https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg" alt="cartImage"
+                  class="add-to-cart-image">
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-price-container">
+          <div>Premiun Price : <b>&#8377 467</b></div>
+          <div class="locked-premium">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/locked_circle_1.svg" alt="lockedPremium">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section-before-footer-container">
+    <div class="section-before-footer">
+      <div class="box-container">
+        <div class="icon-container">
+          <div class="flex">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/misc/hk-cash-icon.svg" />
+          </div>
+        </div>
+
+        <h4 class="text1">Earn HK Cash</h4>
+        <p class="text">
+          Shop with us and get HK Cash to redeem on your next purchase. Know
+          more about
+        </p>
+        <p class="health-kart-text">HK cash</p>
+      </div>
+      <div class="box-container">
+        <div class="icon-container">
+          <div class="flex">
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/safe-payment-icon.svg" />
+          </div>
+        </div>
+
+        <h4 class="text1">Safe Payments</h4>
+        <p class="text">
+          Pay with the world’s most popular and secure payment methods.
+        </p>
+      </div>
+      <div class="box-container">
+        <div class="icon-container">
+          <div class="flex">
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/authenticity-icon.svg" />
+          </div>
+        </div>
+
+        <h4 class="text1">Authenticity Guaranteed</h4>
+        <p class="text">100% authentic products for our customers.</p>
+      </div>
+      <div class="box-container">
+        <div class="icon-container">
+          <div class="flex1">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/misc/andriod-icon.svg" />
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/misc/apple-icon.svg" />
+          </div>
+        </div>
+
+        <h4 class="text1">Download HealthKart App</h4>
+        <p class="text">
+          Get the best experience of Healthkart at your fingertips.
+        </p>
+        <div class="apps-icon-connect-container">
+          <div class="apps-icon-connect">
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/playstore-icon.svg" />
+            <img src="https://img10.hkrtcdn.com/react/static/media/common/misc/appstore-icon.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="section">
+    <div class="footer">
+      <div class="footer-box">
+
+        <div><b>HEALTHKART</b>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Refer & Earn</li>
+            <li>Loyalty Program</li>
+            <li>HK Consult</li>
+            <li>Blogs, Videos & More</li>
+            <li>Brand Directory</li>
+            <li>Authenticity Guaranteed</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div><b>BRANDS</b>
+          <ul>
+            <li>MuscleBlaze</li>
+            <li>TrueBasics</li>
+            <li>JustHer</li>
+            <li>Nouriza</li>
+            <li>Gritzo</li>
+            <li>bGREEN</li>
+          </ul>
+        </div>
+        <div><b>HEALTH & FITNESS</b>
+          <ul>
+            <li>Bodybuilding</li>
+            <li>Weight Loss</li>
+            <li>Hair & Skin Care</li>
+            <li>Sports Nutrition</li>
+            <li>Vitamins & Supplements</li>
+            <li>Ayurveda & Herbs</li>
+            <li>Health Food & Drinks</li>
+            <li>Fitness</li>
+            <li>Wellness</li>
+            <li>Consult Plans</li>
+          </ul>
+        </div>
+        <div><b>POLICIES</b>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Delivery Policy</li>
+            <li>Privacy Policy</li>
+            <li>Returns Policy</li>
+          </ul>
+        </div>
+        <div><b>QUICK LINKS</b>
+          <ul>
+            <li>My Account</li>
+            <li>Track Your Order</li>
+            <li>Store Locator</li>
+            <li>HK Cash</li>
+            <li>HK Coupons</li>
+            <li>FAQs</li>
+            <li>Sell On HealthKart</li>
+          </ul>
+        </div>
+        <div><b>ABOUT HEALTHKART</b>
+          <p>HealthKart.com is India’s largest online health & fitness store for men and women. Shop
+            online from the latest collections of health, fitness and similar products featuring the
+            best brands.</p>
+          <h4> SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <p>Be the first one to receive amazing offers, deals and news</p>
+          <input type="text" placeholder="Enter your email">
+          <button>SUBSCRIBE</button>
+          <h4>CONNECT WITH US</h4>
+          <div class="social-platform">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/facebook.svg" alt="1">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/instagram.svg" alt="2">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/twitter.svg" alt="3">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/youtube.svg" alt="4">
+            <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/pinterest.svg" alt="5">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="disclaimer-section">
+        <div class="icon-box">
+          <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/HK-value.svg" alt="I1">
+          <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/A-G.svg" alt="I2">
+          <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/RP.svg" alt="I3">
+        </div>
+        <div class="disclaimer">
+          <p><b>Disclaimer:</b>The information contained on HealthKart (www.healthkart.com or subdomains) is
+            provided
+            for informational purposes only and is not meant to substitute for the advice provided by your
+            doctor or other healthcare professional. Information and statements regarding products,
+            supplements, programs etc listed on HealthKart have not been evaluated by the Food and Drug
+            Administration or any government authority and are not intended to diagnose, treat, cure, or
+            prevent any disease. Please read product packaging carefully prior to purchase and use. The
+            results from the products will vary from person to person. No individual result should be seen
+            as typical.</p>
+        </div>
+      </div>
+      <div class="copyright-section">
+        <p class="copyright-text">
+          Copyright ©
+          2021
+          ,HealthKart.com, or its affiliates
+        </p>
+        <div class="downloads">
+          <h4>Download our APP</h4>
+          <img src="https://img2.hkrtcdn.com/react/static/media/common/footer/App-Store.svg" alt="1">
+          <img src="https://img10.hkrtcdn.com/react/static/media/common/footer/Google-Play.svg" alt="2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <div class="hover-div" style="display: none; " id="hidden-benefits1">
+      <div class="content-div">
+        <div class="content-div1">
+          <div class="benefits">Benefits</div>
+          <div class="hover-text">
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Helps in Muscle Recovery
+            </p>
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Consume with Water
+            </p>
+          </div>
+        </div>
+        <div class="content-div2">
+          <span class="supplement-info">30 gm of 33 servings contains</span>
+          <div class="supplement-info-text">
+            <ul class="supplement-info-list">
+              <li class="supplement-info-items">
+                <p class="val">25 gm</p>
+                <p class="dis-main">Protien</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">112</p>
+                <p class="dis-main">Kcal</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">5.51 gm</p>
+                <p class="dis-main">BCAA</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">11.75 gm</p>
+                <p class="dis-main">EAA</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hover-div" style="display: none; " id="hidden-benefits2">
+      <div class="content-div">
+        <div class="content-div1">
+          <div class="benefits">Benefits</div>
+          <div class="hover-text">
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Helps in Muscle Gaining
+            </p>
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Consume with Milk
+            </p>
+          </div>
+        </div>
+        <div class="content-div2">
+          <span class="supplement-info">33 grams of 60 servings contains</span>
+          <div class="supplement-info-text">
+            <ul class="supplement-info-list">
+              <li class="supplement-info-items">
+                <p class="val">374</p>
+                <p class="dis-main">Kcal</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">20 gm</p>
+                <p class="dis-main">Protein</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">70 gm</p>
+                <p class="dis-main">Carbs</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">2 gm</p>
+                <p class="dis-main">Dietary Fibre</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hover-div" style="display: none; " id="hidden-benefits3">
+      <div class="content-div">
+        <div class="content-div1">
+          <div class="benefits">Benefits</div>
+          <div class="hover-text">
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Contains Omega3
+            </p>
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Helps in Heart, Joint, Eye and Brain
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hover-div" style="display: none;" id="hidden-benefits4">
+      <div class="content-div">
+        <div class="content-div1">
+          <div class="benefits">Benefits</div>
+          <div class="hover-text">
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Contains MG
+            </p>
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Consume with Milk
+            </p>
+            <p>
+              <img src="https://img4.hkrtcdn.com/react/static/media/common/tick_icon.svg" alt="blue tick">
+              Helps in Muscle Building
+            </p>
+          </div>
+        </div>
+        <div class="content-div2">
+          <span class="supplement-info">233 grams of 14 servings contains</span>
+          <div class="supplement-info-text">
+            <ul class="supplement-info-list">
+              <li class="supplement-info-items">
+                <p class="val">858</p>
+                <p class="dis-main">Kcal</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">62 gm</p>
+                <p class="dis-main">Protein</p>
+              </li>
+              <li class="supplement-info-items">
+                <p class="val">130 gm</p>
+                <p class="dis-main">Carbs</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
-<script>
-    setTimeout(()=>{
-        document.getElementById("link").click()
-    },1)
-</script>
+
+<script src="./Scripts/index.js"></script>

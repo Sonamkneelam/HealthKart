@@ -1,0 +1,250 @@
+  * {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      position: relative;
+  }
+
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(62, 61, 61, 0.56);
+      backdrop-filter: blur(0.09px);
+      z-index: 5;
+  }
+
+  .header-container {
+      position: fixed;
+      width: 100%;
+      height: 65px;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 12%);
+      display: flex;
+      align-items: center;
+      background-color: white;
+  }
+
+  .cont1 {
+      display: flex;
+      width: 80%;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10%;
+      background-color: white;
+  }
+
+  .cont1>div:nth-child(2)>div:nth-child(2),
+  .cont1>div:nth-child(2)>div:nth-child(4) {
+      background-color: black;
+      width: 120px;
+      height: 0.5px;
+      margin-top: 5px;
+  }
+
+  .cont1>div:nth-child(2)>div {
+      display: flex;
+      align-items: center;
+  }
+
+  .cont1>div:nth-child(2) {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-around;
+      color: rgb(147, 147, 147);
+      margin-left: 10%;
+      font-size: 80%;
+  }
+
+  .cont1>div:nth-child(2)>div:nth-child(2n-1) {
+      padding: 0 10px;
+  }
+
+  .logo {
+      font-size: 25.3px;
+      color: rgb(0, 191, 191);
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 3px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+  }
+
+  .logo>span {
+      color: white;
+      background-color: rgb(0, 191, 191);
+      height: 49px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 3px;
+  }
+
+  .address-modal {
+      height: auto;
+      max-height: 90%;
+      overflow: auto;
+      max-width: 95%;
+      transform: translate(-50%, -50%) !important;
+      display: block;
+      z-index: 20;
+      box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 29.2%;
+      /* height: 71.23vh; */
+      background: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+      min-width: 350px;
+  }
+
+  .address-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 0;
+      border-bottom: 1px solid #d6d6d6;
+      padding: 14px 26px 20px 23px;
+  }
+
+  .address-head>h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: #000;
+  }
+
+  .form-container {
+      float: left;
+      width: 100%;
+      padding: 1.8% 0;
+      height: 98%;
+  }
+
+  .address-form {
+      font-size: 14px;
+      color: #212121;
+      outline: none;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+  }
+
+  .fieldset-container {
+      padding: 2.7% 6.7%;
+      height: 100%;
+      width: 86.6%;
+  }
+
+  .address-form-row {
+      width: 100%;
+      margin-bottom: 20px;
+      float: left;
+  }
+
+  .address-full-row {
+      width: 100%;
+      float: left;
+  }
+
+  .address-half-row {
+      width: 45%;
+      float: left;
+      padding-right: 5%;
+  }
+
+  .address-fieldset {
+      padding: 0;
+      border: 0;
+      width: 100%;
+      position: relative;
+  }
+
+  .address-input-healthkart {
+      display: block;
+      width: 100%;
+
+      outline: none !important;
+      border: none;
+      border-bottom: 1px solid #e6e7e7;
+      box-shadow: none !important;
+      outline: none;
+      background: #fff;
+      color: #000;
+      font-size: 13px;
+      line-height: 19px;
+      padding: 20px 0 4px;
+  }
+
+  .address-form-row input:focus+.address-label {
+      border-color: #e6e7e7;
+      border-width: medium medium 2px;
+      top: -4px;
+      left: 2px;
+  }
+
+  .address-form-row input:valid~label {
+      top: -4px;
+      left: 2px;
+      border-color: #e6e7e7;
+  }
+
+  .address-label {
+      color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      border-width: medium medium 1px;
+      pointer-events: none;
+      top: 18px;
+      left: -2px;
+      transition: all 0.2s ease;
+  }
+
+  .address-mandatory-details {
+      width: 8px;
+      height: 8px;
+      padding: 0 13px 0 0;
+      color: red;
+      font-weight: 700;
+  }
+
+  .address-button {
+      cursor: pointer;
+      width: 100%;
+      border-radius: 8px;
+      padding: 0 8px;
+      font-weight: 500;
+      background: #239796;
+      border: 1px solid #239796;
+      font-size: 17px;
+      color: #fff;
+      line-height: 50px;
+  }
+
+  @media (max-width:650px) {
+      .address-modal {
+          height: auto;
+          max-height: 90%;
+          overflow: auto;
+          width: 55%;
+      }
+  }
+
+  @media (min-width:350px) and (max-width:649px) {
+      .address-modal {
+          height: auto;
+          max-height: 90%;
+          overflow: auto;
+          width: 95%;
+      }
+  }
